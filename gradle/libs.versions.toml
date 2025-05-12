@@ -1,0 +1,26 @@
+[versions]
+guava = "33.4.5-jre"
+junit-jupiter-engine = "5.12.1"
+junit-bom = "5.12.2"
+cucumber-bom = "7.22.2"
+assertj-bom = "3.27.3"
+junit-platform-launcher = "1.10.2"
+junit-platform-suite = "1.10.2"
+playwright = "1.51.0"
+
+[libraries]
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
+cucumber-bom = { module = "io.cucumber:cucumber-bom", version.ref = "cucumber-bom" }
+assertj-bom = { module = "org.assertj:assertj-bom", version.ref = "assertj-bom" }
+cucumber-java = { module = "io.cucumber:cucumber-java" }
+cucumber-junit-platform = { module = "io.cucumber:cucumber-junit-platform-engine" }
+junit-platform-suite = { module = "org.junit.platform:junit-platform-suite", version.ref = "junit-platform-suite" }
+assertj-core = { module = "org.assertj:assertj-core" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform-launcher" }
+playwright = { module = "com.microsoft.playwright:playwright", version.ref = "playwright" }
+
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.1.20" }
